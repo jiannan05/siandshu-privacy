@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siandshu Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --muted: #666;
+            --border: #e0e0e0;
+            --accent: #0066cc;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0d1117;
+                --text: #e6edf3;
+                --muted: #8b949e;
+                --border: #30363d;
+                --accent: #58a6ff;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "Noto Sans TC", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+        p, li { font-size: 0.95rem; margin-bottom: 0.5rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; }
+        .lang-switch {
+            display: inline-flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .lang-switch button {
+            background: var(--bg);
+            color: var(--text);
+            border: none;
+            padding: 0.4rem 0.9rem;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+        .lang-switch button.active { background: var(--accent); color: #fff; }
+        .section { display: none; }
+        .section.active { display: block; }
+        .highlight {
+            background: color-mix(in srgb, var(--accent) 8%, transparent);
+            border-left: 3px solid var(--accent);
+            padding: 0.8rem 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+        .footer { color: var(--muted); font-size: 0.8rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <button onclick="showLang('en')" id="btn-en" class="active">English</button>
+    <button onclick="showLang('zh')" id="btn-zh">中文</button>
+</div>
+
+<!-- English -->
+<div class="section active" id="lang-en">
+    <h1>Siandshu Privacy Policy</h1>
+    <p class="meta">Last updated: October 2026</p>
+
+    <div class="highlight">
+        Siandshu is a 100% offline application. It does not connect to the internet, does not collect any data, and does not require any permissions.
+    </div>
+
+    <h2>1. Data Collection</h2>
+    <p>Siandshu does <strong>not</strong> collect, store, or transmit any personal data. Specifically:</p>
+    <ul>
+        <li>No account registration or login</li>
+        <li>No personally identifiable information (name, email, phone, etc.) collected</li>
+        <li>No device identifiers (IMEI, advertising ID, Android ID, etc.) accessed</li>
+        <li>No usage analytics or crash reporting</li>
+        <li>No cookies or similar tracking technologies</li>
+    </ul>
+
+    <h2>2. Data Storage</h2>
+    <p>All files you import into Siandshu are stored in the app's private directory (<code>Context.filesDir</code>) on your device's local storage.</p>
+    <ul>
+        <li>Data never leaves your device — there is no cloud sync, no backup, no server</li>
+        <li>Uninstalling the app permanently deletes all stored data</li>
+        <li>You have full control: delete any file or category at any time</li>
+    </ul>
+
+    <h2>3. Permissions</h2>
+    <p>Siandshu requests <strong>zero</strong> dangerous permissions. The app:</p>
+    <ul>
+        <li>Does not request internet access</li>
+        <li>Does not request storage/file system permissions (uses only its own private directory)</li>
+        <li>Does not request camera, microphone, location, contacts, or any other permissions</li>
+    </ul>
+    <p>The only system interaction is receiving shared files via Android's standard share intent (<code>ACTION_SEND</code>), which is initiated by you choosing to share a file into the app.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Siandshu does <strong>not</strong> use any third-party services:</p>
+    <ul>
+        <li>No analytics SDKs (no Firebase, no Google Analytics, etc.)</li>
+        <li>No ad networks</li>
+        <li>No social login integrations</li>
+        <li>No cloud storage or backend services</li>
+    </ul>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Siandshu is not specifically directed at children, but since it collects no data whatsoever, it is safe for users of all ages. No age verification or parental consent is required.</p>
+
+    <h2>6. Data Security</h2>
+    <p>Since no data is transmitted over any network and no data leaves your device, there is no risk of data interception or breach. Your files remain under your physical control at all times.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>If this privacy policy changes, the updated version will be posted here with a new "Last updated" date.</p>
+
+    <h2>8. Contact</h2>
+    <p>For any questions about this privacy policy, you may contact: <code>siandshu.app@gmail.com</code></p>
+</div>
+
+<!-- Chinese -->
+<div class="section" id="lang-zh">
+    <h1>思枢隐私政策</h1>
+    <p class="meta">最后更新：2026 年 10 月</p>
+
+    <div class="highlight">
+        思枢是一款 100% 离线应用，不联网、不收集任何数据、不申请任何权限。
+    </div>
+
+    <h2>1. 数据收集</h2>
+    <p>思枢<strong>不会</strong>收集、存储或传输任何个人数据，具体包括：</p>
+    <ul>
+        <li>无需注册账号或登录</li>
+        <li>不收集任何个人身份信息（姓名、邮箱、手机号等）</li>
+        <li>不读取设备标识符（IMEI、广告 ID、Android ID 等）</li>
+        <li>无使用统计或崩溃上报</li>
+        <li>不使用 Cookie 或类似追踪技术</li>
+    </ul>
+
+    <h2>2. 数据存储</h2>
+    <p>您导入思枢的所有文件均存储在应用私有目录（<code>Context.filesDir</code>）中，完全保留在设备本地。</p>
+    <ul>
+        <li>数据不会离开您的设备——无云同步、无备份、无服务器</li>
+        <li>卸载应用即永久删除所有存储数据</li>
+        <li>您拥有完全控制权：可随时删除任意文件或分类</li>
+    </ul>
+
+    <h2>3. 权限</h2>
+    <p>思枢<strong>不申请任何</strong>危险权限。应用：</p>
+    <ul>
+        <li>不申请网络访问权限</li>
+        <li>不申请存储/文件系统权限（仅使用自有私有目录）</li>
+        <li>不申请相机、麦克风、定位、通讯录或其他权限</li>
+    </ul>
+    <p>唯一的系统交互是通过 Android 标准分享机制（<code>ACTION_SEND</code>）接收您主动分享进来的文件。</p>
+
+    <h2>4. 第三方服务</h2>
+    <p>思枢<strong>不使用</strong>任何第三方服务：</p>
+    <ul>
+        <li>无统计 SDK（无 Firebase、无 Google Analytics 等）</li>
+        <li>无广告网络</li>
+        <li>无社交登录</li>
+        <li>无云存储或后端服务</li>
+    </ul>
+
+    <h2>5. 儿童隐私</h2>
+    <p>思枢并非专门面向儿童，但由于完全不收集任何数据，对所有年龄段用户均安全，无需年龄验证或家长同意。</p>
+
+    <h2>6. 数据安全</h2>
+    <p>由于数据不经过任何网络传输，也不会离开您的设备，因此不存在数据拦截或泄露的风险。您的文件始终处于您的物理控制之下。</p>
+
+    <h2>7. 政策变更</h2>
+    <p>如本隐私政策发生变更，更新后的版本将在此页面发布，并更新"最后更新"日期。</p>
+
+    <h2>8. 联系方式</h2>
+    <p>如对隐私政策有任何疑问，请联系：<code>siandshu.app@gmail.com</code></p>
+</div>
+
+<hr>
+<p class="footer">© 2026 Siandshu. All rights reserved.</p>
+
+<script>
+function showLang(lang) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+    document.getElementById('btn-' + lang).classList.add('active');
+}
+</script>
+
+</body>
+</html>
